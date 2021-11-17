@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>New student</title>
+	</head>
+	<body>
+	<h1>New student</h1>
+	<h3><strong>personal Information</strong></h3>
+	<form>
+		<dir>
+		<label for="name">Full name: </label>
+        <input type="text" name="name"required placeholder="Enter your name">
+        </dir>
+        <dir>
+        <label for="birthday">Birthday: </label>
+        <input type="date" name="birthday" required>
+        </dir>
+        <dir>
+        <label>Gender:  </label>
+        <input type="radio" name="Gender" required>Male
+        <input type="radio" name="Gender" required>Female
+        </dir>
+	</form>
+	<hr>
+    <h3><strong>Contact Information</strong></h3>
+    <form>
+    	<dir>
+        <label>Email: </label>
+        <input type="email" name="Email" required placeholder="Enter your email">
+        </dir>
+        <dir>
+        <label>Phone: </label>
+        <input type="number" name="phone" required placeholder="Enter your phone">
+        </dir>
+        <dir>
+        <label>Address: </label>
+        <textarea name="Address"cols="100" rows="5" ></textarea>
+        </dir>
+    </form>
+    <hr>
+    <h3><strong>University Information</strong></h3>
+    <form>
+    <dir>
+    <label for="Choose">Choose your faculty: </label>
+    <select name="Choose" id="Choose">
+    	<optgroup label="Computer science">
+    	<option value="1" selected>Factulty 1</option>
+    	<option value="2">Factulty 2</option>
+        <option value="3">Factulty 3</option>
+    	<option value="4">Factulty 4</option>
+        </optgroup>
+    </select>
+    </dir>
+    <hr>
+	<input type="submit" name="Add" value="Add">
+    </form>
+	</body>
+	</html>
