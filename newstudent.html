@@ -3,72 +3,72 @@
     <head>
         <title>New student</title>
     </head>
+    <script> 
+        window.alert("Welcome To New Student Page");
+    </script>
     <body>
-    <h1>New Student</h1>
-    <h3><strong>personal Information</strong></h3>
-    <div>
+        <h1>New Student</h1>
     <form>
-        <dir>
+        <fieldset> 
+            <legend><p><strong>Personal Information</strong></p></legend>
+        <div>
         <label for="name">Full Name: </label>
         <input type="text" name="name"required placeholder="Enter Your Name">
-        </dir>
-        <dir>
-        <label for="birthday">Birthday: </label>
-        <input type="date" name="birthday" required>
-        </dir>
-        <dir>
+        </div>
+        <br>
+        <div>
+        <label for="birthdate">Birthdate: </label>
+        <input type="date" name="birthdate" required>
+        </div>
+        <br>
+        <div>
         <label>Gender:  </label>
         <input type="radio" name="Gender" required>Male
         <input type="radio" name="Gender" required>Female
-        </dir>
-        <br>
+        </div>
+        </fieldset>
     </form>
-    </div>
-    <h3><strong>Contact Information</strong></h3>
-    <div>
     <form>
-        <dir>
+        <fieldset>
+            <legend><p><strong>Contact Information</strong></p></legend>
+        <div>
         <label>Email: </label>
         <input type="email" name="Email" required placeholder="Enter Your Email">
-        </dir>
-        <dir>
-            <label>Phone: </label>
-        <input type="number" name="phone" required placeholder="Enter Your Phone">
-        </dir>
-        <dir>
-        <label>Address: </label>
-        <textarea name="Address"cols="100" rows="5" ></textarea>
-        </dir>
+        </div>
         <br>
+        <div>
+        <label>Phone: </label>
+        <input type="number" name="phone" required placeholder="Enter Your Phone">
+        </div>
+        <br>
+        <div>
+        <label>Address: </label>
+        <textarea name="Address"cols="100" rows="5" required placeholder="Enter Your Address" ></textarea>
+        </div>
+        </fieldset>
     </form>
-    </div>
-    <h3><strong>University Information</strong></h3>
     <form>
-    <div>
-    <dir>
-    <label for="Choose">Choose Your Faculty: </label>
-    <select name="Choose" id="Choose">
+        <fieldset>
+            <legend><p><strong>University Information</strong></p></legend>
+        <div>
+        <label for="Choose">Choose Your Faculty: </label>
+        <select name="Choose" id="Choose">
         <optgroup label="Computer Science">
         <option value="1" selected>Factulty 1</option>
         <option value="2">Factulty 2</option>
         <option value="3">Factulty 3</option>
         <option value="4">Factulty 4</option>
         </optgroup>
-    </select>
-    </dir>
-    <br>
+        </select>
+        </div>
+        <br>
+        </fieldset>
     </form>
-    </div>
-    <input  type="submit" name="Add" value="Add">
-    <style>
-        div{
-        border: 1px solid;
-        }
-    </style>
-    <style>
-        dir {
-    text-align: left;
-        }
-    </style>
+        <input  type="submit" name="Add" value="Add">
+        <style>
+        div {
+        text-align: left;
+            }
+        </style>
     </body>
     </html>
